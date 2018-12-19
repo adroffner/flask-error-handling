@@ -1,0 +1,8 @@
+# Prod Libs
+
+# add here ...
+
+# Testing Libs
+coverage>=4.5.2
+flake8>=3.6.0
+nose>=1.3.7
