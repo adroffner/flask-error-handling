@@ -22,7 +22,7 @@ setup(name='flask_error_handling',
       ],
       scripts=[],
       # NO nosetests: junitparser.TestSuite confuses nose, testing ERRORs
-      # test_suite='nose.collector',
+      test_suite='nose.collector',
       # tests_require=['nose>=1.3.7', 'coverage>=4.4.1'],
       # NOTE: ./setup.py nosetests <= needs "setup_requires"
       setup_requires=[
