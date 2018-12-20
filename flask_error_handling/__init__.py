@@ -4,4 +4,4 @@ Flask Error Handling provides an "app" object binding.
 Use it to register Exception classes to desired HTTP status codes.
 """
 
-__version__ = '0.1b1'
+__version__ = '0.1b1'  # pragma: no cover
