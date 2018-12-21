@@ -16,7 +16,12 @@ class TestBindings(unittest.TestCase):
         pl = Mock()
         with mock.patch('flask_error_handling.bindings.register_exceptions', return_value=""):
             bindings.bind_error_handlers(pl, register_status_dict)
-            bindings.register_exceptions.assert_called_with(403, ['c'])
+            # bindings.register_exceptions.assert_called_with(403, ['c'])
+
+            self.assertEqual(bindings.register_exceptions.mock_calls, [
+                mock.call(400, ['a', 'b']), # put expected parameters
+                mock.call(403, ['c']),
+            ])
 
     @patch('flask_error_handling.bindings.issubclass', MagicMock(return_value=True))
     def test_register_exceptions(self):
