@@ -26,8 +26,11 @@ setup(name='flask_error_handling',
       # tests_require=['nose>=1.3.7', 'coverage>=4.4.1'],
       # NOTE: ./setup.py nosetests <= needs "setup_requires"
       setup_requires=[
-          # 'nose>=1.3.7',
-          'coverage>=4.4.1'
+          'coverage>=4.5.2',
+          'flake8>=3.6.0',
+          'Flask>=1.0.2',
+          'nose>=1.3.7',
+          'parameterized>=0.6.1',
       ],
       keywords=[
       ],
